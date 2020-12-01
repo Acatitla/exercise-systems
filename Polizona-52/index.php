@@ -11,16 +11,10 @@
 	body, html{
           background-position: center-center;
           background-size: cover;
-          background-repeat: no-repeat;
           background-position: center center;
           font-family: "Poppins";
           background-color:#38AF79;
       }
-
-		h2 {
-			text-align:center;
-			font-weight: bold;  
-		}
 
 		select{
 			font-size:11px;
@@ -36,6 +30,8 @@
 				<div class="row align-items-center">
 					<div class="col-12 align-self-center text-center p-4">
 						<h1>José Ángel Acatitla González</h1>
+						<h2>Diseño de Sistemas.</h2>
+						<h2>2CM32</h2>
 						<!--<h2>Este es un ejemplo de como subir los archivos desde git bash</h2> -->
 							<form action="misprocesos.php" method="get">
 								<label>Mi modelo de negocio consta de los siguientes procesos</label><br><br>
