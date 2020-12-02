@@ -9,20 +9,8 @@
 	</head>
 	<style>
 	body, html{
-          background-position: center-center;
-          background-size: cover;
-          background-position: center center;
-          font-family: "Poppins";
           background-color:#38AF79;
-      }
-
-		select{
-			font-size:11px;
-		}
-
-		.barra{
-			width:20rem; 
-		}
+	}
 			
 	</style>
 
@@ -30,7 +18,7 @@
 	<div class="container">
 				<div class="row align-items-center">
 					<div class="col-12 align-self-center text-center p-4">
-						<h3>calcular:</h3>
+						<h2>calcular:</h2>
 						<!--
 							var text = '{"actual":"function() {for( i in obj.costoembarque){ actual1 += +(obj.inventario[i].costo.unitario*obj.inventario[i].embarque.costounitario)}return actual1;}","inventario":[{"embarque":{"cantidad":2,"costounitario":10}},{"embarque":{"cantidad":2,"costounitario":1}},{"embarque":{"cantidad":2,"costounitario":4}},{"embarque":{"cantidad":3,"costounitario":2}},{"embarque":{"cantidad":2,"costounitario":2}}]}';
 							var text = '{"actual":"function() {for( i in obj.inventario){ actual1 += +(obj.inventario[i].embarque.cantidad*obj.inventario[i].embarque.costounitario)}return actual1;}","inventario":[{"embarque":{"cantidad":2,"costounitario":10}},{"embarque":{"cantidad":2,"costounitario":1}},{"embarque":{"cantidad":2,"costounitario":4}},{"embarque":{"cantidad":3,"costounitario":2}},{"embarque":{"cantidad":2,"costounitario":2}}]}';
@@ -38,7 +26,10 @@
 						-->
 						<h5>Ejemplo: Calcular el precio de Isan. </h5>
 						<h6>el link es: https://rextester.com/BQP78803</h6>
-						<p id="demo"></p>
+						<h6>https://www.w3schools.com/code/tryit.asp?filename=GL2ZFXYH4FJC</h6>
+						<br>
+						<h3><p class="text-light bg-dark" id="demo"></p></h3>
+						
 						<!--
 						<script>
 						var actual1 = 0;
@@ -59,6 +50,8 @@
 						
 						<h2>Nuestro llamado a Base de datos:</h2>
 
+						<br>
+
 						<?PHP
 							$hostname_localhost ="68.70.164.26";
 							$database_localhost ="polizona_mercado";
@@ -72,7 +65,7 @@
 								$consulta="select idalmacen, unidades, costoembarque from embarque where idempresa='52';";
 								$resultado=mysqli_query($conexion,$consulta);
 								if($conexion){
-									echo "<table>";
+									echo "<center><table>";
 									echo "<th> Almacén</th>";
 									echo "<th> Unidades </th>";
 									echo "<th> Costo de Embarque </th>";
@@ -91,16 +84,14 @@
 									
 									echo "</tr>";
 									echo "</tr>";
-									echo "</table>";
+									echo "</table></center>";
 									
 									echo json_encode($json);
 									mysqli_close($conexion);
 								}
 								else{
 									echo "error";
-								}
-								
-									
+								}		
 						?>
 					</div>
 				</div>	
