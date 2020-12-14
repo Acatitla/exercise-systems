@@ -1,0 +1,31 @@
+<!DOCTYPE html> 
+  <html lang="es"> 
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="U-UA-Compatible" content="ie-edge">
+      <title>Datos Generales</title>
+    </head>
+    <body>
+
+    <p>Acceder a los elementos de un objeto</p>
+
+    <p id="demo"></p>
+
+    <script>
+      var objeto = "";
+      objeto = {"numlista":25,
+        "balance":{"activo":{"bancos":125,"insumoA":454},
+                  "pasivo":{"proveedores":125}
+                  }
+        };
+
+      document.getElementById("demo").innerHTML = 
+      "boleta: "+ objeto.numlista + "<br>" 
+      + "bancos: "+ objeto.balance.activo.bancos + "<br>"
+      + "insumoA: "+objeto.balance.activo.insumoA + "<br>"
+      + "proveedores: "+objeto.balance.pasivo.proveedores + "<br>";
+    </script>
+
+    </body>
+  </html>
