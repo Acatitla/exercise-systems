@@ -48,6 +48,16 @@
 							<button type="submit">Función</button>
 							</form>
 							<br>
+							<br>
+							<form action="elements.html" method="get">
+							<button type="submit">Ejemplo de: Elementos de objetos</button>
+							</form>
+							<br>
+							<br>
+							<form action="general_data.html" method="get">
+							<button type="submit">Datos generales JSon</button>
+							</form>
+							<br>
 					</div>
 				</div>	
 			</div>
