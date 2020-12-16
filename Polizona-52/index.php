@@ -37,9 +37,12 @@
 								<label>Mi modelo de negocio consta de los siguientes procesos</label><br><br>
 								Selecciona el proceso que deseas ejecutar:
 								<select name="opciones">
+									<!-- 
 									<option value="A"> Clasificación de objetos</option>
 									<option value="B"> Agrupación de objetos</option>
-									<option value="C"> Cálculo de indicadores</option>
+									-->
+									<option value = "A">insumo A</option>
+									<option value = "B">insumo B</option>
 								</select><br><br>
 								<input type="submit"/>
 							</form>

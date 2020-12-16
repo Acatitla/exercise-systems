@@ -86,7 +86,7 @@
 									echo "</tr>";
 									echo "</table></center>";
 									
-									echo json_encode($json);
+									echo json_encode($json, JSON_NUMERIC_CHECK);
 									mysqli_close($conexion);
 								}
 								else{
