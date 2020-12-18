@@ -32,20 +32,16 @@
 						<h1>José Ángel Acatitla González</h1>
 						<h2>Diseño de Sistemas.</h2>
 						<h2>2CM32</h2>
-						<!--<h2>Este es un ejemplo de como subir los archivos desde git bash</h2> -->
-							<form action="misprocesos.php" method="get">
+						<!--<h2>Este es un ejemplo de como subir los archivos desde git bash</h2>
+								<form action="misprocesos.php" method="get">
 								<label>Mi modelo de negocio consta de los siguientes procesos</label><br><br>
 								Selecciona el proceso que deseas ejecutar:
 								<select name="opciones">
-									<!-- 
 									<option value="A"> Clasificación de objetos</option>
 									<option value="B"> Agrupación de objetos</option>
-									-->
-									<option value = "A">insumo A</option>
-									<option value = "B">insumo B</option>
 								</select><br><br>
 								<input type="submit"/>
-							</form>
+							</form> -->
 							<br>
 							<form action="funcion.php" method="get">
 							<button type="submit">Función</button>
@@ -56,10 +52,12 @@
 							<button type="submit">Ejemplo de: Elementos de objetos</button>
 							</form>
 							<br>
-							<br>
-							<form action="general_data.html" method="get">
-							<button type="submit">Datos generales JSon</button>
+							<br><form action="empresa.php" method="get">
+							<button type="submit">Consulta de Industria</button>
 							</form>
+							<!-- <form action="general_data.html" method="get">
+							<button type="submit">Datos generales JSon</button>
+							</form> -->
 							<br>
 					</div>
 				</div>	
