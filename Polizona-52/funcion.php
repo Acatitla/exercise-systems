@@ -19,29 +19,14 @@
 				<div class="row align-items-center">
 					<div class="col-12 align-self-center text-center p-4">
 						<h2>calcular:</h2>
-						<!--
-							var text = '{"actual":"function() {for( i in obj.costoembarque){ actual1 += +(obj.inventario[i].costo.unitario*obj.inventario[i].embarque.costounitario)}return actual1;}","inventario":[{"embarque":{"cantidad":2,"costounitario":10}},{"embarque":{"cantidad":2,"costounitario":1}},{"embarque":{"cantidad":2,"costounitario":4}},{"embarque":{"cantidad":3,"costounitario":2}},{"embarque":{"cantidad":2,"costounitario":2}}]}';
-							var text = '{"actual":"function() {for( i in obj.inventario){ actual1 += +(obj.inventario[i].embarque.cantidad*obj.inventario[i].embarque.costounitario)}return actual1;}","inventario":[{"embarque":{"cantidad":2,"costounitario":10}},{"embarque":{"cantidad":2,"costounitario":1}},{"embarque":{"cantidad":2,"costounitario":4}},{"embarque":{"cantidad":3,"costounitario":2}},{"embarque":{"cantidad":2,"costounitario":2}}]}';
-						<h3>valor total del inventario. Sumatoria de cantidad por costo unitario</h3>
-						-->
 						<h5>Ejemplo: Calcular el precio de Isan. </h5>
 						<h6>el link es: https://rextester.com/BQP78803</h6>
 						<h6>https://www.w3schools.com/code/tryit.asp?filename=GL2ZFXYH4FJC</h6>
 						<br>
-						<h3><p class="text-light bg-dark" id="demo"></p></h3>
-						
-						<!--
-						<script>
-						var actual1 = 0;
-						var text = '{"actual":"function() {for( i in obj.inventario){ actual1 += +(obj.inventario[i].embarque.cantidad*obj.inventario[i].embarque.costounitario)}return actual1;}","inventario":[{"embarque":{"cantidad":2,"costounitario":10}},{"embarque":{"cantidad":2,"costounitario":1}},{"embarque":{"cantidad":2,"costounitario":4}},{"embarque":{"cantidad":3,"costounitario":2}},{"embarque":{"cantidad":2,"costounitario":2}}]}';
-						var obj = JSON.parse(text);
-						obj.actual = eval("(" + obj.actual + ")");
-						document.getElementById("demo").innerHTML = obj.actual();
-						</script>
-						-->
 
+						<h3><p class="text-light bg-dark" id="demo"></p></h3>
 						<script>
-						var text = '{"isan":"function() {precio=299500;if(precio<28645201.02){isan=precio*0.02}else{if(precio<66666666668){isan=0;}else {}} return isan;}"}';
+						var text = '{"isan":"function() {precio=299500; if(precio<28645201.02){isan=precio*0.02}else{if(precio<66668){isan=0;}else {}} return isan;}"}';
 						var obj = JSON.parse(text);
 						obj.isan = eval("(" + obj.isan + ")");
 						document.getElementById("demo").innerHTML = obj.isan();
@@ -61,7 +46,6 @@
 										
 								$opcion = $_GET["opciones"];
 								$conexion = mysqli_connect($hostname_localhost,$username_localhost,$password_localhost,$database_localhost);
-								//$consulta="select idempresa, idtipoalmacen, maximo from almacen;";
 								$consulta="select idalmacen, unidades, costoembarque from embarque where idempresa='52';";
 								$resultado=mysqli_query($conexion,$consulta);
 								if($conexion){
