@@ -43,6 +43,11 @@
 								<input type="submit"/>
 							</form> -->
 							<br>
+							<form action="general_data.html" method="get">
+							<button type="submit">Datos Generales</button>
+							</form>
+							<br>
+							<br>
 							<form action="funcion.php" method="get">
 							<button type="submit">Función</button>
 							</form>
