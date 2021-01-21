@@ -3,27 +3,11 @@
 		<Title>empresa individual de José Ángel Acatitla González </Title>
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     	<link href="bootstrap.min.css">
-    	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-		<link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
 		<meta charset = "utf-8">
 	</head>
 	<style>
 	body, html{
-          background-position: center-center;
-          background-size: cover;
-          background-position: center center;
-          font-family: "Poppins";
           background-color:#38AF79;
-      }
-
-		select{
-			font-size:11px;
-		}
-
-		.barra{
-			width:20rem; 
-		}
-			
 	</style>
 		<body>
 			<div class="container">
@@ -60,9 +44,6 @@
 							<br><form action="empresa.php" method="get">
 							<button type="submit">Consulta de Industria</button>
 							</form>
-							<!-- <form action="general_data.html" method="get">
-							<button type="submit">Datos generales JSon</button>
-							</form> -->
 							<br>
 					</div>
 				</div>	
